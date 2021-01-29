@@ -1,7 +1,5 @@
-
 package com.company;
 import java.util.Arrays;
-
 import java.util.Random;
 
 public class Main {
@@ -22,7 +20,8 @@ public class Main {
             }
         }
         System.out.println("Max: "+max);
-//Min
+
+        //Min
         int min = array[0];
         for (int i : array)
             if (min > i) {
