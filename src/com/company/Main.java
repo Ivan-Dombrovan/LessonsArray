@@ -35,6 +35,6 @@ public class Main {
             avg += i / array.length;
         }
         System.out.println("Avg: "+avg);
-
+        System.out.println("DevelopExercise_2");
     }
 }
