@@ -1,39 +1,23 @@
 package com.company;
-import java.util.Arrays;
+
 import java.util.Random;
 
 public class Main {
 
     public static void main(String[] args) {
         Random random = new Random();
-        int [] array = new int[10];
-        for (int i= 0; i < array.length; i++) {
-            array[i]=random.nextInt(50);
-        }
-        System.out.println("Array: "+Arrays.toString(array));
-
-        //Max
-        int max = array[0];
-        for (int i : array) {
-            if (max < i) {
-                max = i;
+        int a=-10;
+        int b=10;
+        int [][] array = new int[15][8];
+        for (int i= 0; i < array.length; i++){
+            for (int j = 0; j <array[i].length; j++) {
+                array[i][j]=a+random.nextInt(b - a + 1);
+                System.out.print(array[i][j]+ " ");
             }
-        }
-        System.out.println("Max: "+max);
+        System.out.println();
+       // System.out.println("Array: "+Arrays.toString(array));
 
-        //Min
-        int min = array[0];
-        for (int i : array)
-            if (min > i) {
-                min = i;
-            }
-        System.out.println("Min: "+min);
 
-        //Avg
-        int avg = array[0];
-        for (int i : array) {
-            avg += i / array.length;
-        }
-        System.out.println("Avg: "+avg);
+    }
     }
 }
