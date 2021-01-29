@@ -14,10 +14,10 @@ public class Main {
                 array[i][j]=a+random.nextInt(b - a + 1);
                 System.out.print(array[i][j]+ " ");
             }
-        System.out.println();
-       // System.out.println("Array: "+Arrays.toString(array));
+            System.out.println();
+            // System.out.println("Array: "+Arrays.toString(array));
 
 
-    }
+        }
     }
 }
